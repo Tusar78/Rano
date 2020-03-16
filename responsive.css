@@ -1,0 +1,96 @@
+@media screen and (max-width: 992px){
+    .header .clickable {
+        display: block;
+    }
+    .header .NavAndLogo .navigation {
+        width: 100%;
+        height: 0;
+        position: absolute;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .header .NavAndLogo .myClass {
+        height: 281px;
+        background: rgba(0, 49, 50, 0.8);
+        border-radius: 20px;
+    } 
+
+    .header .NavAndLogo {
+        display: block;
+    }
+
+    .header .NavAndLogo .navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .NavAndLogo .navigation ul li a {
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .NavAndLogo .navigation ul li a.tryit {
+        border: none;
+        border-bottom: 1px solid lightcoral;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .content .PostItem {
+        flex-direction: column;
+    }
+
+    .content .PostItem .imgPart {
+        width: 100%;
+    }
+
+    .content .PostItem .postPart {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .subscribePart {
+        padding: 30px 0;
+    }
+
+    .subscribePart .subScribeArea {
+        flex-direction: column;
+    }
+
+    .subscribePart .subScribeArea .leftSub {
+        margin-bottom: 25px;
+        flex-direction: column;
+    }
+
+    .subscribePart .subScribeArea .leftSub .img {
+        margin-bottom: 20px;
+        margin: 20px auto;
+    }
+
+    .footer .footerArea {
+        flex-direction: column;
+    }
+
+    .footer .footerArea > div {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer .footerArea > div:last-child {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 556px){}
+@media screen and (max-width: 405px){
+    .content .PostItem .postPart .comments {
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    .content .PostItem .postPart .comments a{
+        margin-bottom: 5px;
+    }
+}

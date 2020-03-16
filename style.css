@@ -1,0 +1,357 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700&display=swap');
+
+/* Basic Typography */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', calibri;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+/* Basic Typography */
+
+/* Heading area */
+.header {
+    width: 100%;
+    height: 600px;
+    padding: 30px;;
+    background: url(images/slider.png) no-repeat;
+    background-size: cover;
+}
+
+.header .NavAndLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header .NavAndLogo .logo h1{
+    color: #eee;
+    font-size: 42px;
+}
+
+.header .NavAndLogo .logo h1 span{
+    color: red;
+    font-size: 45px;
+}
+
+.header .NavAndLogo .navigation ul {
+    display: flex;
+}
+
+.header .NavAndLogo .navigation ul li a {
+    display: inline-block;
+    color: #eee;
+    font-size: 16px;
+    padding: 10px 16px;
+    transition: .5s;
+}
+
+.header .NavAndLogo .navigation ul li a:hover {
+    color: lightcoral;
+}
+
+.header .NavAndLogo .navigation ul li a.tryit {
+    color: lightcoral;
+    border: 1px solid lightcoral;
+    border-radius: 20px;
+    margin: 0 0 0 30px;
+    padding: 10px 30px;
+}
+
+.header .NavAndLogo .navigation ul li a.tryit:hover  {
+    color: #fff;
+    background-color: lightcoral;
+}
+
+.header .clickable {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    cursor: pointer;
+}
+
+.header .clickable div {
+    width: 100%;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.header .rotateClass div:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 7px);
+    z-index: 1;
+    position: relative;
+    background-color: #f00;
+}
+
+.header .rotateClass div:nth-child(2) {
+    transform: scale(1.3, 9);
+}
+
+.header .rotateClass div:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+    z-index: 1;
+    background-color: #f00;
+}
+
+.header .SomeContent {
+    width: 100%;
+    text-align: center;
+    padding: 180px 0 0;
+}
+
+.header .SomeContent h2{
+    font-size: 32px;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+.header .SomeContent p{
+    font-size: 16px;
+    color: #eee;
+    font-weight: lighter;
+}
+/* Heading area end*/
+
+
+/* Bloging area  */
+.content {
+    width: 100%;
+    background-color: #fff;
+    padding: 0 30px;
+}
+
+.content .PostItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 0 60px;
+}
+
+.content .PostItem .imgPart{
+    width: 55%;
+}
+
+.content .PostItem .imgPart img{
+    width: 100%;
+}
+
+.content .PostItem  .postPart {
+    width: 40%;
+}
+
+.content .PostItem  .postPart h2{
+    font-size: 27px;
+    color: lightslategray;
+    margin: 40px 0 25px;
+}
+
+.content .PostItem  .postPart .comments {
+    display: flex;
+}
+
+.content .PostItem  .postPart .comments a {
+    font-size: 14px;
+    color: #999;
+    margin-right: 20px;
+}
+
+.content .PostItem  .postPart .comments a img {
+    width: 12px;
+    height: 12px;
+}
+
+.content .PostItem  .postPart .comments a span {
+    padding-left: 5px;
+}
+
+.content .PostItem  .postPart p {
+    padding: 25px 0 0;
+    font-size: 18px;
+    color: #999;
+}
+
+.content .PostItem  .postPart a.readmore {
+    display: inline-block;
+    padding: 10px 30px;
+    color: magenta;
+    border: 1px solid magenta;
+    margin-top: 30px;
+    border-radius: 20px;
+    transition: .3s ease;
+}
+
+.content .PostItem  .postPart a.readmore:hover {
+    color: #fff;
+    background-color: magenta;
+}
+/* Bloging area End */
+
+/* Pagination Area  */
+.pagination {
+    width: 100%;
+    padding: 40px 0 80px;
+    overflow: hidden;
+}
+
+.pagination .paginationArea {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination .paginationArea a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    margin: 0 10px;
+    background-color: #ddd;
+    color: #111;
+    border-radius: 50%;
+    transition: .3s;
+}
+.pagination .paginationArea a.active,
+.pagination .paginationArea a:hover{
+    background-color: #333;
+    color: #ddd;
+}
+/* Pagination Area  End*/
+
+
+/* Subscribe Part  */
+.subscribePart {
+    width: 100%;
+    padding: 60px 0;
+    background: url(images/01.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.subscribePart::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .65);
+    top: 0;
+    left: 0;
+}
+
+
+.subscribePart .subScribeArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+.subscribePart .subScribeArea .leftSub{
+    display: flex;
+    align-items: center;
+}
+
+.subscribePart .subScribeArea .leftSub .img {
+    padding: 15px;
+    background-color: #fff;
+    margin-right: 22px;
+    border-radius: 7px;
+}
+
+.subscribePart .subScribeArea .leftSub .img img{
+    width: 24px;
+    border-radius: 5px;
+    
+}
+
+.subscribePart .subScribeArea .leftSub p{
+    font-size: 22px;
+    font-weight: 500;
+    color: #eee;
+}
+
+.subscribePart .subScribeArea .leftSub p strong{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.subscribePart .subScribeArea .rightSub a.subscribe{
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #fff;
+    color: magenta;
+    box-shadow: 0 1px 10px rgba(0,0,0,.3);
+    border-radius: 20px;
+}
+/* Subscribe Part End */
+
+/* Footer Area  */
+.footer {
+    width: 100%;
+    padding: 30px;
+}
+
+.footer .footerArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footerArea h2 {
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.footer .footerArea h2 span{
+    color: red;
+    font-size: 32px;
+}
+
+.footer .footerArea .copyW p{
+    color: #666;
+}
+
+.footer .footerArea .copyW p a{
+    color: magenta;
+}
+
+.footer .footerArea .social a{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.footer .footerArea .social a img{
+    width: 16px;
+}
+/* Footer Area  End*/
